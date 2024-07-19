@@ -6,6 +6,8 @@
   max-width: 600px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main h1 {
@@ -37,10 +39,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 3px
+  border-radius: 3px;
+  margin-left: 4px
 }
 
 .form button[type='submit']:hover {
   background-color: #e51433;
 }
 
+.tarefas {
+  margin-top: 30px;
+}
+
+.tarefas li {
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 500ms;
+}
+
+.tarefas li .edit {
+  margin-right: 20px;
+  color: #51c5de;
+}
+
+.tarefas li .delete {
+  margin-right: 20px;
+  color: #e51433;
+}
+
+.tarefas li:hover {
+  background: #51c5de;
+}
+
+.tarefas li:hover .edit, .tarefas li:hover .delete {
+  color: #000;
+  transition: all 500ms;
+}
+
+.tarefas li .edit, .tarefas li:hover .delete {
+  cursor: pointer;
+}
+
+.tarefas li span {
+  display: flex;
+  align-items: center;
+}
