@@ -33,6 +33,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'prettier/prettier': 'off',
     'no-unused-vars': 'off',
+    'react/prop-types': 'off'
   },
 };
 
